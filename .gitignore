@@ -1,0 +1,46 @@
+# Byte‑compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Arquivos de ambiente
+.env
+*.env
+
+# Editor / IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs e caches
+*.log
+*.cache
+pytest_cache/
+
+# Arquivos de build Docker
+docker-compose.override.yml
+
+# Arquivos de deploy / chaves
+*.crt
+*.key
+
+# Coverage reports
+htmlcov/
+.coverage
+
+# VS Code settings folder
+.vscode/
+
+# Outros
+*.swp

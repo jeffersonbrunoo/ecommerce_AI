@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: gassist
+Version: 0.0.1
+Summary: Python interfaces into G-Assist module
+Home-page: 
+License-File: LICENSE
+Requires-Dist: tqdm
+Requires-Dist: flask
+Requires-Dist: flask-cors
+Requires-Dist: colorama
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary

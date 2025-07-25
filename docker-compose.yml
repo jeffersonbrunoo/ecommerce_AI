@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  flask_app:
+    build: .
+    container_name: ecommerce-assistant
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    env_file:
+      - .env                    # carrega LANGFLOW_*
+    depends_on:
+      - langflow                # garante o Langflow antes
+    restart: unless-stopped    # reinicia em caso de falha
+
+  langflow:
+    image: langflowai/langflow:1.5.0.post1
+    container_name: langflow
+    ports:
+      - "7860:7860"
+    volumes:
+      - ./langflow_data:/data
+    environment:
+      - LANGFLOW_PROJECT_PATH=/data
